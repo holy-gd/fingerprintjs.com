@@ -22,11 +22,11 @@
 ======================================*/
 
 .faq {
-  --faqWidth: 600px;
-  max-width: 600px;
-  padding: 0 2rem;
-  width: 100%;
-  margin: 0 auto;
+  --contentWidth: 600px;
+  // max-width: 600px;
+  // padding: 0 2rem;
+  // width: 100%;
+  // margin: 0 auto;
 
   &:before {
     position: absolute;

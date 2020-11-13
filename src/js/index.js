@@ -27,6 +27,9 @@ const paymentSwitcherAnnually = $('.payment-switcher__button--annually');
 const paymentSwitcherMonthly = $('.payment-switcher__button--monthly');
 const starCounter = document.querySelectorAll('.btn--github .github-counter');
 const mobileLinksSubmenu = $('.main-links__link--has-submenu');
+const userInputIdentifications = $('.input.user-input__input');
+const onDemandPrice = $('.on-demand__price');
+const reservedPrice = $('.reserved__price');
 
 // Pricing Table
 const pricingTable = [
@@ -163,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
       minimumResultsForSearch: -1,
     });
 
-    console.log($('.preset__select'));
+    // console.log($('.preset__select'));
 
     $('.preset__select').on('select2:select', (e) => {
       const data = e.params.data;
