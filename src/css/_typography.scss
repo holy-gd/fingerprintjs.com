@@ -1,5 +1,9 @@
 strong {
   font-weight: 700 !important;
+
+  &.primary {
+    color: v('brand-fire');
+  }
 }
 
 em {
@@ -75,5 +79,11 @@ pre {
 
   @media screen and (max-width: 768px) {
     font-size: 1.5rem;
+  }
+}
+
+span {
+  &.primary {
+    color: v('brand-fire');
   }
 }

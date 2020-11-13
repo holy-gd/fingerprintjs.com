@@ -58,7 +58,12 @@ module.exports = {
               hmr: !isProd,
             },
           },
-          { loader: 'css-loader', options: { importLoaders: 1 } },
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+            },
+          },
           isProd
             ? {
                 loader: 'postcss-loader',
@@ -123,12 +128,13 @@ module.exports = {
         path.join(templateDir, 'template.hbs'),
         path.join(sourceDir, 'views', 'partials', '*.hbs'),
         path.join(sourceDir, 'views', 'partials', 'sections', '*.hbs'),
+        path.join(sourceDir, 'views', 'partials', 'components', '*.hbs'),
       ],
       onBeforeSetup: (Handlebars) => {
         return registerHandlersHelpers(Handlebars);
       },
       onBeforeRender: (Handlebars, data) => {
-        console.log(data);
+        // console.log(data);
         return makeDataReplacements(data);
       },
     }),
@@ -147,12 +153,13 @@ module.exports = {
           to: '.',
           transform: function (content, path) {
             if (path.slice(-5) === '.html' || path.slice(-3) === '.js') {
-              return content.toString()
+              return content
+                .toString()
                 .replace(/\{\{FPJS_API_TOKEN\}\}/g, process.env.FPJS_API_TOKEN)
                 .replace(/\{\{FPJS_ENDPOINT\}\}/g, process.env.FPJS_ENDPOINT)
                 .replace(/\{\{FPJS_TOKEN\}\}/g, process.env.FPJS_TOKEN);
             } else {
-              return content
+              return content;
             }
           },
         },
@@ -171,12 +178,16 @@ module.exports = {
       fallback: 'style-loader',
       use: [{ loader: 'css-loader', options: { minimize: isProd } }],
     }),
-  ].concat(isProd ? prodPlugins : [
-    new Dotenv({
-      path: './.env', // Path to .env file (this is the default)
-      safe: true // load .env.example (defaults to "false" which does not use dotenv-safe)
-    }),
-  ]),
+  ].concat(
+    isProd
+      ? prodPlugins
+      : [
+          new Dotenv({
+            path: './.env', // Path to .env file (this is the default)
+            safe: true, // load .env.example (defaults to "false" which does not use dotenv-safe)
+          }),
+        ],
+  ),
   devServer: {
     contentBase: buildDir,
     open: false,

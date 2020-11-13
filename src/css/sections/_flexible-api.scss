@@ -55,7 +55,6 @@
   }
 }
 
-
 .tools-integrations {
   display: flex;
   align-items: flex-start;
@@ -79,7 +78,6 @@
 
 .tools-integrations-item {
   display: block;
-  // width: Max(100%, 250px);
 
   &__icon-container {
     background-color: adjust-color(c('brand-water'), $saturation: -10%, $lightness: 25%);

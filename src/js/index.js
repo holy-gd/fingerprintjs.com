@@ -8,6 +8,7 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 import 'select2';
 import { initFpjsWidget } from './fpjs-widget';
 import 'swiper/swiper-bundle.css';
+import { faqInit } from './faq';
 
 const githubToken = process.env.GITHUB_API_TOKEN;
 
@@ -189,6 +190,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /*=====  End of PRICING PAGE  ======*/
+
+  faqInit();
 });
 
 function handlePriceChange(e) {
