@@ -6,3 +6,6 @@
 .container--large {
   --contentWidth: 1232px;
 }
+
+/* 
+This file is not even used, the style above is hardcoded in template.hbs as <style> tag, sadly while the run works but the build fails if it's loaded. Probably something to do with webpack. */

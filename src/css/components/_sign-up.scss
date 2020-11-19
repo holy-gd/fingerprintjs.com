@@ -15,11 +15,11 @@
   .container {
     display: flex;
     align-items: center;
-    padding: 0 0 0 Max(2rem, 50vw - var(--contentWidth) / 2);
+    // padding: 0 0 0 Max(2rem, 50vw - var(--contentWidth) / 2);
 
     @media screen and (max-width: 768px) {
       display: block;
-      padding: 0 Max(2rem, 50vw - var(--contentWidth) / 2);
+      // padding: 0 Max(2rem, 50vw - var(--contentWidth) / 2);
     }
 
     > * + * {
@@ -30,6 +30,10 @@
   .section-header {
     flex: 1;
     min-width: 390px;
+
+    @media screen and (max-width: 768px) {
+      min-width: unset;
+    }
   }
 
   .section__title {
@@ -42,10 +46,10 @@
     min-height: 320px;
     max-height: 320px;
     text-align: center;
-    // background-repeat: no-repeat;
-    // background-size: auto 100%;
-    // background-position: center center;
-    // background-image: url('../img/signup-bg.png');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center center;
+    background-image: url('../img/signup-bg.png');
 
     img {
       width: auto;

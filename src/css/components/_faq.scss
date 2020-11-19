@@ -3,7 +3,11 @@
 ====================================*/
 
 .section--faq {
-  position: relative;
+  background-color: v('white');
+  background-repeat: no-repeat;
+  background-size: 993px auto;
+  background-image: url('../img/faq-bg.png');
+  background-position: center top;
 
   .section-header {
     margin-bottom: 4rem;
@@ -23,26 +27,6 @@
 
 .faq {
   --contentWidth: 600px;
-  // max-width: 600px;
-  // padding: 0 2rem;
-  // width: 100%;
-  // margin: 0 auto;
-
-  &:before {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: block;
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: 993px auto;
-    background-image: url('../img/faq-bg.png');
-    background-position: center center;
-    z-index: -1;
-  }
 
   &__group {
     border-radius: 1rem;
