@@ -134,12 +134,6 @@ module.exports = {
         return registerHandlersHelpers(Handlebars);
       },
       onBeforeRender: (Handlebars, data) => {
-<<<<<<< HEAD
-        // console.log(data);
-||||||| merged common ancestors
-        console.log(data);
-=======
->>>>>>> d8bff4b82a4e5ea66612096dff3fb446eb51cb78
         return makeDataReplacements(data);
       },
     }),
@@ -183,7 +177,6 @@ module.exports = {
       fallback: 'style-loader',
       use: [{ loader: 'css-loader', options: { minimize: isProd } }],
     }),
-<<<<<<< HEAD
   ].concat(
     isProd
       ? prodPlugins
@@ -194,22 +187,7 @@ module.exports = {
           }),
         ],
   ),
-||||||| merged common ancestors
-  ].concat(isProd ? prodPlugins : [
-    new Dotenv({
-      path: './.env', // Path to .env file (this is the default)
-      safe: true // load .env.example (defaults to "false" which does not use dotenv-safe)
-    }),
-  ]),
-=======
-  ].concat(isProd ? prodPlugins : [
-    new Dotenv({
-      path: './.env', // Path to .env file (this is the default)
-      safe: true // load .env.example (defaults to "false" which does not use dotenv-safe)
-    }),
-  ]),
   devtool: isProd ? false : 'source-map',
->>>>>>> d8bff4b82a4e5ea66612096dff3fb446eb51cb78
   devServer: {
     contentBase: buildDir,
     open: false,

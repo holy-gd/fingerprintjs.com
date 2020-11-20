@@ -42,7 +42,6 @@
     position: relative;
 
     @media screen and (max-width: 768px) {
-      // max-width: 80vw;
       width: 100%;
     }
 
@@ -57,7 +56,6 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      // @include gap(2rem);
       font-size: 1.75rem;
       margin-top: 2rem;
 

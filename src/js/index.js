@@ -27,16 +27,9 @@ const paymentSwitcherAnnually = $('.payment-switcher__button--annually');
 const paymentSwitcherMonthly = $('.payment-switcher__button--monthly');
 const starCounter = document.querySelectorAll('.btn--github .github-counter');
 const mobileLinksSubmenu = $('.main-links__link--has-submenu');
-<<<<<<< HEAD
-const userInputIdentifications = $('.input.user-input__input');
-const onDemandPrice = $('.on-demand__price');
-const reservedPrice = $('.reserved__price');
-||||||| merged common ancestors
-=======
 const userInputIdentifications = $('.user-input .user-input__input');
 const onDemandPrice = $('.on-demand__price');
 const reservedPrice = $('.reserved__price');
->>>>>>> d8bff4b82a4e5ea66612096dff3fb446eb51cb78
 
 // Pricing Table
 const pricingTable = [
@@ -175,14 +168,6 @@ document.addEventListener('DOMContentLoaded', () => {
       minimumResultsForSearch: -1,
     });
 
-<<<<<<< HEAD
-    // console.log($('.preset__select'));
-
-||||||| merged common ancestors
-    console.log($('.preset__select'));
-
-=======
->>>>>>> d8bff4b82a4e5ea66612096dff3fb446eb51cb78
     $('.preset__select').on('select2:select', (e) => {
       const data = e.params.data;
       userInputIdentifications.val('');
@@ -197,7 +182,8 @@ document.addEventListener('DOMContentLoaded', () => {
     userInputIdentifications.on('input', (e) => {
       let identifications = parseInt(e.target.value, 10);
       // Don't allow the number of identifications to go below the minimum.
-      identifications = (identifications >= minimumIdentifications) ? identifications : minimumIdentifications;
+      identifications =
+        identifications >= minimumIdentifications ? identifications : minimumIdentifications;
 
       $('.preset__select').val('').trigger('change.select2');
 

@@ -856,48 +856,18 @@
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
 
-<<<<<<< HEAD
-"@fingerprintjs/fingerprintjs-pro@^3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@fingerprintjs/fingerprintjs-pro/-/fingerprintjs-pro-3.1.0.tgz#f3ce5dc00cea0d489bb6dbfebb5198debb0b9a9a"
-  integrity sha512-TmuAitod5JRBVg7wBkUk3a5eIEMvKdUExbqtEzkjmi8mQfgdhPSaCchQYZOBMRoJcTdtK1IBzpjbL0I65MyilQ==
-||||||| merged common ancestors
-"@fingerprintjs/fingerprintjs-pro@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@fingerprintjs/fingerprintjs-pro/-/fingerprintjs-pro-3.0.0.tgz#a12869f43033253d914ba40bf4d0b08e4a29db76"
-  integrity sha512-LHaongk69fNXS/+kL6uU2VYWK5xwZo7AUDTfWFdwX1Hr03+HlpMXuraFg4uVgaWINJOlDkggjaBx60nR+pIWuQ==
-=======
 "@fingerprintjs/fingerprintjs-pro@^3.0.3":
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@fingerprintjs/fingerprintjs-pro/-/fingerprintjs-pro-3.0.3.tgz#ced38dc2bef24ace6752c7e88878bbcd0cf895cf"
   integrity sha512-GuQB6lqmoq7uwRVbaxaJXfZMg59oYkFYmJoMjVf5TUz17zpXENmJDvdud+ZfleO8l6gNHtdt2IZ7cBoIB+nX9Q==
->>>>>>> d8bff4b82a4e5ea66612096dff3fb446eb51cb78
   dependencies:
-<<<<<<< HEAD
-    "@fingerprintjs/fingerprintjs" "3.0.3"
-||||||| merged common ancestors
-    "@fingerprintjs/fingerprintjs" "3.0.0"
-=======
     "@fingerprintjs/fingerprintjs" "3.0.1"
->>>>>>> d8bff4b82a4e5ea66612096dff3fb446eb51cb78
     tslib "^2.0.1"
 
-<<<<<<< HEAD
-"@fingerprintjs/fingerprintjs@3.0.3":
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/@fingerprintjs/fingerprintjs/-/fingerprintjs-3.0.3.tgz#0c8720dc851dccc15021ea1b8f90b7908c5f745c"
-  integrity sha512-cMSNSpXqoDWU/sSBKFIt4XGgqSVD7lH6KbNh3QGsFOhiVMfuzUheAw/dYlutl5oznbuZzolRAGIXaPAothMHiA==
-||||||| merged common ancestors
-"@fingerprintjs/fingerprintjs@3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@fingerprintjs/fingerprintjs/-/fingerprintjs-3.0.0.tgz#a318aada0bf16705ee896cd6252b31430e503f05"
-  integrity sha512-5xujExHAA/EV+DD5yv7RY0lM6Q2DDNaWKvrJUesSqc0OQmXR0R/2OKuAgF6NiVmX6kAmgTjXbK9Aw8Xg8eUJfQ==
-=======
 "@fingerprintjs/fingerprintjs@3.0.1":
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/@fingerprintjs/fingerprintjs/-/fingerprintjs-3.0.1.tgz#bfbb84ab426af92c2b2964ad81e07bad0d228fd8"
   integrity sha512-97ya0X4WQSiCWBNxRoRP2AgYdyyIbWUbyeqggRGdtyIEAFfycvXUFLIh065mlz6Y6WW5h96g2fojXN3w+MzdKw==
->>>>>>> d8bff4b82a4e5ea66612096dff3fb446eb51cb78
   dependencies:
     tslib "^2.0.1"
 
@@ -3698,7 +3668,7 @@ fastparse@^1.0.0:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/fastparse/-/fastparse-1.1.2.tgz#91728c5a5942eced8531283c79441ee4122c35a9"
 
-favicons-webpack-plugin@^2.1.0:
+favicons-webpack-plugin@2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/favicons-webpack-plugin/-/favicons-webpack-plugin-2.1.0.tgz#a95e88dc234cd8589e16018b3f9f3a518b305f86"
   integrity sha512-tHASGU/7pDbjma8Z6c6tmLe4zTcglRPVuE57L+qBCLYu2ELKsXu9h66a8S8Rjb4aFHXvJgTY3voghYzrhEAV6Q==
