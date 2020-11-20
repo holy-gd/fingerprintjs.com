@@ -252,11 +252,17 @@ function getVisitTitle(timestamp, now = Date.now()) {
     return pluralize(secondsDiff / (60 * 60 * 24), 'day ago', 'days ago');
   }
 
+<<<<<<< HEAD
   return new Date(timestamp).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
   });
+||||||| merged common ancestors
+  return new Date(timestamp).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+=======
+  return new Date(timestamp).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+>>>>>>> d8bff4b82a4e5ea66612096dff3fb446eb51cb78
 }
 
 function getBrowserName({ browserName, browserVersion, os, osVersion, device }) {
